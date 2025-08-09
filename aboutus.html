@@ -72,7 +72,33 @@
             background-color: #333;
         }
 
+        h3 {
+            color: #f3dd19;
+        }
+
+        p {
+            color: #f3dd19;
+        }
+
+        button {
+            background-color: #f3dd19; /* yellow */
+            color: #000; /* black text for contrast */
+            border: none; /* remove default border */
+            padding: 10px 20px; /* space inside the button */
+            border-radius: 50px; /* large radius for curved sides */
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* optional drop shadow */
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e0c800; /* slightly darker yellow on hover */
+        }
+
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div>
@@ -92,15 +118,26 @@
         <div>
             <h1>About Us</h1>
 
-            <p><b>Company Description:</b><br>
-            Titan Haulers & Earthmovers Inc. is a company that helps move land and deliver materials using big trucks and machines. We support building projects and construction work.
+            <h3>SERVICES: </h3>
+            <p><b>Video Games:</b><br>
+                Consoles(like Playstation, Xbox, Nintendo), software for those consoles, and 
+                accessories.
             </p>
 
-            <p><b>People Behind the Company:</b><br>
-                    Alfred Pologon<br>
-                Jr. Alfred Pologon
-                
+            <p><b>Board Games:</b><br>
+                A wide variety of board games, including general,
+                family, strategy, and kids' games.
             </p>
+
+            <p><b>Puzzles:</b><br>
+                Jigsaw puzzles, including themed and adult puzzles.
+            </p>
+            <br><br><br>
+            <button>
+                <i class="fas fa-globe"></i> 
+                alfredgamingshop.com
+                <span class="after-icon"><i class="fas fa-circle-chevron-right"></i></span>
+            </button>
         </div>
     </div>
     <br>

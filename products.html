@@ -48,30 +48,60 @@
             margin-bottom: 1rem;
         }
 
-        table {
+        .nav-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
 
-        td {
+        .nav-table td {
             background-color: #222;
             border: 1px solid #0ff;
             padding: 15px;
             text-align: center;
         }
 
-        td a {
+        .nav-table td a {
             color: #0ff;
             text-decoration: none;
             font-weight: bold;
             display: block;
         }
 
-        td:hover {
+        .nav-table td:hover {
             background-color: #333;
         }
 
+        table.products-table {
+            border-collapse: collapse;
+            background-color: white;
+            border: 2px solid #444;
+            width: 100%;
+        }
+
+        table.products-table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            background-color: #222;
+            vertical-align: top;
+        }
+
+        h3 {
+            color: #f3dd19;
+        }
+
+        .service-cell p {
+            color: #f3dd19;
+            font-size: 20px;    /* valid unit — change to taste (e.g. 20px or 1.25rem) */
+            line-height: 1.5;   /* improves readability */
+            /* margin: 0 0 0.75rem; spacing between paragraphs */
+            /*text-align: left;    optional: aligns text to left inside the cell */
+        }
+
+        .item-cell p{
+            color: #f3dd19;
+        }
     </style>
 </head>
 <body>
@@ -81,7 +111,7 @@
         <input type="text" placeholder="Search here...">
 
         <div>
-            <table border="1" width="100%">
+            <table class="nav-table" border="1" width="100%">
                 <tr>
                     <td><a href="index.html">Home</a></td>
                     <td><a href="#">Products</a></td>
@@ -90,27 +120,38 @@
             </table>
         </div>
         <div>
-            <h1>Welcome</h1>
+            <h1>Our Products</h1>
 
-            <p><b>Titan Haulers & Earthmovers Inc.</b> offers helpful services for transport and construction.</p>
-
-            <p><b>Services Offered:</b><br>
-            - Cargo Trucking<br>
-            - Earthmoving Services<br>
-            - Construction Material Hauling<br>
-            - Custom Project Contracts
-            </p>
-
-            <p><b>Heavy Equipment for Rent:</b><br>
-            - Backhoe<br>
-            - Loader<br>
-            - Dump Truck<br>
-            - Excavator<br>
-            - Bulldozer<br>
-            - Concrete Mixer<br>
-            - Crane<br>
-            - Grader
-            </p>
+            <table class="products-table">
+                <tr>
+                    <td class="service-cell" width="50%">
+                        <h3>SERVICES: </h3>
+                        <p><b>Retail Sales:</b> 
+                            Selling games and related accessories</p>
+                        <p><b>Gaming Knowledge:</b> 
+                            Some game shops employ knowledgeable
+                            staff who can provide and recommendations
+                        </p>
+                        <p><b>Exclusive Deals:</b> 
+                            Some game shops may offer deals and promotions
+                            that are exclusive to their store or website
+                        </p>
+                    </td>
+                    <td class="item-cell" width="50%">
+                        <h3>ITEMS: </h3>
+                        <p>Halo - Php 799</p>
+                        <p>Red dead Redemption - Php 980</p>
+                        <p>GTA 6 - Php 5500</p>
+                        <p>GTA 6 - Php 1000</p>
+                        <p>Minecraft - Php 900</p>
+                        <p>Elden Ring - Php 4000</p>
+                        <p>Call of Duty - Php 1K - 4K</p>
+                        <p>Ghost Recon - Php 980</p>
+                        <p>Rainbow six siege - Php 800</p>
+                        <p>Black Myth: Wukong - Php 3000</p>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
