@@ -74,7 +74,7 @@
 
         table.products-table {
             border-collapse: collapse;
-            background-color: white;
+            /* background-color: white; */
             border: 2px solid #444;
             width: 100%;
         }
@@ -102,6 +102,12 @@
         .item-cell p{
             color: #f3dd19;
         }
+
+        .device-cell {
+            flex-direction: column;
+            align-items: center; /* center horizontally */
+            gap: 10px; /* space between images */
+        }
     </style>
 </head>
 <body>
@@ -124,7 +130,7 @@
 
             <table class="products-table">
                 <tr>
-                    <td class="service-cell" width="50%">
+                    <td class="service-cell" width="40%">
                         <h3>SERVICES: </h3>
                         <p><b>Retail Sales:</b> 
                             Selling games and related accessories</p>
@@ -137,7 +143,7 @@
                             that are exclusive to their store or website
                         </p>
                     </td>
-                    <td class="item-cell" width="50%">
+                    <td class="item-cell" width="40%">
                         <h3>ITEMS: </h3>
                         <p>Halo - Php 799</p>
                         <p>Red dead Redemption - Php 980</p>
@@ -149,6 +155,12 @@
                         <p>Ghost Recon - Php 980</p>
                         <p>Rainbow six siege - Php 800</p>
                         <p>Black Myth: Wukong - Php 3000</p>
+                    </td>
+                    <td class="device-cell">
+                        <img src="./PC.png" alt="image description" height="100"><br>
+                        <img src="./switch.png" alt="image description" height="100"><br>
+                        <img src="./PS5.png" alt="image description" height="100"><br>
+                        <img src="./xboxXseries.png" alt="image description" height="100">
                     </td>
                 </tr>
             </table>
